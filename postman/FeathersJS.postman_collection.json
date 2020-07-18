@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "1d753969-7778-44ac-9c6b-aac44ee8aa03",
+		"name": "FeathersJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registering a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ambuj.ideata@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"users"
+					]
+				},
+				"description": "http://localhost:3030/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"strategy\": \"local\",\r\n  \"email\": \"ambuj.ideata@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/authentication/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"authentication",
+						""
+					]
+				},
+				"description": "http://localhost:3030/authentication/"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
